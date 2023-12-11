@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bill Calculator</h1>
+
+        <div class="input-section">
+            <label for="costInput">Cost Per Dish:</label>
+            <input type="number" id="costInput" placeholder="Enter cost per dish">
+            
+            <label for="peopleInput">Number of People:</label>
+            <input type="number" id="peopleInput" placeholder="Enter number of people">
+            
+            <button onclick="calculateBill()">Calculate Bill</button>
+        </div>
+
+        <div class="output-section">
+            <p>Total Bill:</p>
+            <div id="totalBillOutput">-</div>
+            
+            <p>Bill Per Person:</p>
+            <div id="billPerPersonOutput">-</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

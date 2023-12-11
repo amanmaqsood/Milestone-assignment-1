@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 150vh; /* Added height to make scrolling possible */
+}
+
+.content {
+    padding: 20px;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0;
+    transition: width 0.3s; /* Add smooth transition */
+}
